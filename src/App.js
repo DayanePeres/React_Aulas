@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Challenge from "./Components/Challenge";
+import ImagemTeste from "./assets/img2.jpg"
+import ManageData from "./Components/ManageData";
+import ListHender from "./Components/ListHender";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Challenge/>
+          
+      <h1>Avançando em React</h1>
+      {/*Imagem publica*/}
+      <div>
+        <img  src="img1.jpg"  alt="paisagem" />
+      </div>
+     
+      {/*Imagem asserts */}
+      <div>
+       <img  src={ImagemTeste} alt="paisagem" />
+      </div>
+
+      <ManageData/>
+      <ListHender/>
     </div>
   );
 }
